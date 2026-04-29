@@ -229,36 +229,51 @@ setInterval(createHeart,500);
 </div>
 
 
-<div class="section contact-box">
+<
+  <div class="section contact-box">
     <h2>Hubungi Saya 💌</h2>
+    
     <p class="contact-text">
-        Punya project, pertanyaan, atau cuma mau kenalan? 
+        Punya project, pertanyaan, atau cuma mau kenalan?
         kirim pesan aja yaa 🚀
     </p>
 
     <form action="https://formspree.io/f/xbdqvvro" method="POST" class="contact-form">
 
-        <input type="text" placeholder="👤 Nama Lengkap" required>
+        <input 
+            type="text" 
+            name="nama"
+            placeholder="👤 Nama Lengkap" 
+            required
+        >
 
-        <input type="email" placeholder="📧 Email Anda" required>
+        <input 
+            type="email" 
+            name="email"
+            placeholder="📧 Email Anda" 
+            required
+        >
 
-        <select required>
+        <select name="keperluan" required>
             <option value="">Pilih Keperluan</option>
-            <option>Kerja Sama</option>
-            <option>Tanya Project</option>
-            <option>Kasih Masukan</option>
-            <option>Cuma Mau Kenalan 😎</option>
+            <option value="Kerja Sama">Kerja Sama</option>
+            <option value="Tanya Project">Tanya Project</option>
+            <option value="Kasih Masukan">Kasih Masukan</option>
+            <option value="Kenalan">Cuma Mau Kenalan 😎</option>
         </select>
 
-        <textarea placeholder="✍️ Tulis pesan kamu..." required></textarea>
+        <textarea 
+            name="pesan"
+            placeholder="✍️ Tulis pesan kamu..." 
+            required
+        ></textarea>
 
         <button type="submit">
             🚀 Kirim Pesan
         </button>
 
     </form>
-</div>
-
+  </div>
     </form>
 </div>
 </html>
